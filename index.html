@@ -405,6 +405,11 @@
                 window.focus()
                 canvas.focus()
             })
+
+            initialize.then(() => {
+                if (instantGamesBridge.platform.id === instantGamesBridge.PLATFORM_ID.YANDEX)
+                    showInterstitial()
+            })
         </script>
     </body>
 </html>
