@@ -28,7 +28,7 @@
     <body>
         <canvas id="unity-canvas" style="width: 100%; height: 100%; background: #FFFFFF; position: absolute; top: 0px; left: 0px;"></canvas>
         <div id="loading"><span id="loading-text"></span></div>
-        <script src="Build/Shooooot.loader.js"></script>
+        <script src="Build/ShoooootVK.loader.js"></script>
         <script src="./instant-games-bridge.js"></script>
         <script>
             if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -437,13 +437,13 @@
             createUnityInstance(
                 document.querySelector('#unity-canvas'), 
                 {
-                    dataUrl: 'Build/Shooooot.data.unityweb',
-                    frameworkUrl: 'Build/Shooooot.framework.js.unityweb',
-                    codeUrl: 'Build/Shooooot.wasm.unityweb',
+                    dataUrl: 'Build/ShoooootVK.data.unityweb',
+                    frameworkUrl: 'Build/ShoooootVK.framework.js.unityweb',
+                    codeUrl: 'Build/ShoooootVK.wasm.unityweb',
                     streamingAssetsUrl: 'StreamingAssets',
                     companyName: 'DefaultCompany',
                     productName: 'Shooooot',
-                    productVersion: '1.0',
+                    productVersion: '0.1',
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                     // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
                 },
